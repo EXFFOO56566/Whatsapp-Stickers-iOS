@@ -1,0 +1,858 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CE6CF2F5656A194268F2E58 /* Pods_Sticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02E6FAA50241609F3E3B3475 /* Pods_Sticker.framework */; };
+		621CDE08ED4BDFA7EF5E41F7 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A860C352B211C25470AC099B /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		884FF1C227865313005E7A17 /* AdmobManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884FF1C127865313005E7A17 /* AdmobManager.swift */; };
+		88F44C042783DB94001C5A1D /* PackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C032783DB94001C5A1D /* PackCell.swift */; };
+		88F44C1B2783DE9F001C5A1D /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C062783DE9E001C5A1D /* YYImageCoder.m */; };
+		88F44C1C2783DE9F001C5A1D /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C082783DE9E001C5A1D /* YYFrameImage.m */; };
+		88F44C1D2783DE9F001C5A1D /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C092783DE9E001C5A1D /* ImageData.swift */; };
+		88F44C1E2783DE9F001C5A1D /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C0A2783DE9E001C5A1D /* Limits.swift */; };
+		88F44C1F2783DE9F001C5A1D /* ImageToWebPDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C0C2783DE9F001C5A1D /* ImageToWebPDataTransformer.m */; };
+		88F44C202783DE9F001C5A1D /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C0D2783DE9F001C5A1D /* UIAlertController+Additions.swift */; };
+		88F44C212783DE9F001C5A1D /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C0E2783DE9F001C5A1D /* Sticker.swift */; };
+		88F44C222783DE9F001C5A1D /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C0F2783DE9F001C5A1D /* YYAnimatedImageView.m */; };
+		88F44C232783DE9F001C5A1D /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C112783DE9F001C5A1D /* UIImage+WebP.m */; };
+		88F44C242783DE9F001C5A1D /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C122783DE9F001C5A1D /* StickerPack.swift */; };
+		88F44C252783DE9F001C5A1D /* StickerPackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C142783DE9F001C5A1D /* StickerPackManager.swift */; };
+		88F44C262783DE9F001C5A1D /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C162783DE9F001C5A1D /* Interoperability.swift */; };
+		88F44C272783DE9F001C5A1D /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C172783DE9F001C5A1D /* YYSpriteSheetImage.m */; };
+		88F44C282783DE9F001C5A1D /* WebPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C182783DE9F001C5A1D /* WebPManager.swift */; };
+		88F44C292783DE9F001C5A1D /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F44C192783DE9F001C5A1D /* YYImage.m */; };
+		E014A0FD2465E3BC009BC36B /* AllSubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E014A0FC2465E3BB009BC36B /* AllSubViewController.swift */; };
+		E014A0FF2465E4F0009BC36B /* PackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E014A0FE2465E4F0009BC36B /* PackViewController.swift */; };
+		E0431B2B2465EB140056E5AD /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0431B2A2465EB140056E5AD /* EditViewController.swift */; };
+		E04BC7292465EF7B00F51193 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04BC7282465EF7B00F51193 /* NotificationService.swift */; };
+		E04BC72D2465EF7B00F51193 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E04BC7262465EF7B00F51193 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E070A3E12465D32600FE44C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A3E02465D32600FE44C1 /* AppDelegate.swift */; };
+		E070A3E82465D32600FE44C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E070A3E62465D32600FE44C1 /* Main.storyboard */; };
+		E070A3EA2465D32600FE44C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E070A3E92465D32600FE44C1 /* Assets.xcassets */; };
+		E070A3ED2465D32600FE44C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E070A3EB2465D32600FE44C1 /* LaunchScreen.storyboard */; };
+		E070A3F52465D56600FE44C1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A3F42465D56600FE44C1 /* Config.swift */; };
+		E070A4022465D58A00FE44C1 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3F72465D58900FE44C1 /* add.png */; };
+		E070A4032465D58A00FE44C1 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3F82465D58900FE44C1 /* tick.png */; };
+		E070A4042465D58A00FE44C1 /* white_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3F92465D58900FE44C1 /* white_logo.png */; };
+		E070A4052465D58A00FE44C1 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3FA2465D58900FE44C1 /* down.png */; };
+		E070A4062465D58A00FE44C1 /* ex.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3FB2465D58900FE44C1 /* ex.png */; };
+		E070A4072465D58A00FE44C1 /* viwe_more.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3FC2465D58900FE44C1 /* viwe_more.png */; };
+		E070A4082465D58A00FE44C1 /* rate.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3FD2465D58900FE44C1 /* rate.png */; };
+		E070A4092465D58A00FE44C1 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3FE2465D58900FE44C1 /* share.png */; };
+		E070A40A2465D58A00FE44C1 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A3FF2465D58900FE44C1 /* delete.png */; };
+		E070A40B2465D58A00FE44C1 /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A4002465D58900FE44C1 /* edit.png */; };
+		E070A40C2465D58A00FE44C1 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = E070A4012465D58900FE44C1 /* back.png */; };
+		E070A4442465D8A700FE44C1 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A4432465D8A700FE44C1 /* WebP.framework */; };
+		E070A4462465D8C600FE44C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A4452465D8C600FE44C1 /* UIKit.framework */; };
+		E070A4482465D8CC00FE44C1 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A4472465D8CC00FE44C1 /* CoreFoundation.framework */; };
+		E070A44A2465D8D900FE44C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A4492465D8D900FE44C1 /* QuartzCore.framework */; };
+		E070A44C2465D8DF00FE44C1 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A44B2465D8DF00FE44C1 /* AssetsLibrary.framework */; };
+		E070A44E2465D8EB00FE44C1 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A44D2465D8EB00FE44C1 /* ImageIO.framework */; };
+		E070A4502465D8F000FE44C1 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A44F2465D8EF00FE44C1 /* Accelerate.framework */; };
+		E070A4522465D8FD00FE44C1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E070A4512465D8FD00FE44C1 /* MobileCoreServices.framework */; };
+		E070A45A2465DBBE00FE44C1 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A4552465DBBE00FE44C1 /* CategoryCell.swift */; };
+		E070A45B2465DBBE00FE44C1 /* MyStickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A4562465DBBE00FE44C1 /* MyStickerCell.swift */; };
+		E070A45C2465DBBE00FE44C1 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A4572465DBBE00FE44C1 /* HomeCell.swift */; };
+		E070A45D2465DBBE00FE44C1 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A4582465DBBE00FE44C1 /* StickerCell.swift */; };
+		E070A45E2465DBBE00FE44C1 /* SubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A4592465DBBE00FE44C1 /* SubCell.swift */; };
+		E070A4602465DBFF00FE44C1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070A45F2465DBFF00FE44C1 /* MainViewController.swift */; };
+		E0D17C642465DDA3000BBF6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D17C632465DDA3000BBF6F /* ViewController.swift */; };
+		E0F8897A2465E69F00E84BC8 /* CreateStickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F889792465E69F00E84BC8 /* CreateStickerViewController.swift */; };
+		E0F8897C2465E88100E84BC8 /* CreateSticker2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8897B2465E88100E84BC8 /* CreateSticker2ViewController.swift */; };
+		E0F8897E2465E91900E84BC8 /* CustomPackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8897D2465E91900E84BC8 /* CustomPackViewController.swift */; };
+		E0F889802465E9A300E84BC8 /* MyStickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F8897F2465E9A300E84BC8 /* MyStickerViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E04BC72B2465EF7B00F51193 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E070A3D52465D32600FE44C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E04BC7252465EF7B00F51193;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E04BC72E2465EF7B00F51193 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E04BC72D2465EF7B00F51193 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		02E6FAA50241609F3E3B3475 /* Pods_Sticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sticker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36F4FD3187EF85DA44D681D8 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		48422B6E2FC815BF48512A36 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		884FF1C127865313005E7A17 /* AdmobManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdmobManager.swift; sourceTree = "<group>"; };
+		88F44C032783DB94001C5A1D /* PackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackCell.swift; sourceTree = "<group>"; };
+		88F44C052783DE9E001C5A1D /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
+		88F44C062783DE9E001C5A1D /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
+		88F44C072783DE9E001C5A1D /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
+		88F44C082783DE9E001C5A1D /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFrameImage.m; sourceTree = "<group>"; };
+		88F44C092783DE9E001C5A1D /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		88F44C0A2783DE9E001C5A1D /* Limits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Limits.swift; sourceTree = "<group>"; };
+		88F44C0B2783DE9E001C5A1D /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFrameImage.h; sourceTree = "<group>"; };
+		88F44C0C2783DE9F001C5A1D /* ImageToWebPDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToWebPDataTransformer.m; sourceTree = "<group>"; };
+		88F44C0D2783DE9F001C5A1D /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
+		88F44C0E2783DE9F001C5A1D /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		88F44C0F2783DE9F001C5A1D /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
+		88F44C102783DE9F001C5A1D /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		88F44C112783DE9F001C5A1D /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		88F44C122783DE9F001C5A1D /* StickerPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPack.swift; sourceTree = "<group>"; };
+		88F44C132783DE9F001C5A1D /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		88F44C142783DE9F001C5A1D /* StickerPackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPackManager.swift; sourceTree = "<group>"; };
+		88F44C152783DE9F001C5A1D /* ImageToWebPDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageToWebPDataTransformer.h; sourceTree = "<group>"; };
+		88F44C162783DE9F001C5A1D /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
+		88F44C172783DE9F001C5A1D /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		88F44C182783DE9F001C5A1D /* WebPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
+		88F44C192783DE9F001C5A1D /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImage.m; sourceTree = "<group>"; };
+		88F44C1A2783DE9F001C5A1D /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCoder.h; sourceTree = "<group>"; };
+		8C2CB91E9771F177B04B74ED /* Pods-Sticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticker.release.xcconfig"; path = "Target Support Files/Pods-Sticker/Pods-Sticker.release.xcconfig"; sourceTree = "<group>"; };
+		A860C352B211C25470AC099B /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A77FEF4A7A6802AA0023F4 /* Pods-Sticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sticker.debug.xcconfig"; path = "Target Support Files/Pods-Sticker/Pods-Sticker.debug.xcconfig"; sourceTree = "<group>"; };
+		E014A0FC2465E3BB009BC36B /* AllSubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllSubViewController.swift; sourceTree = "<group>"; };
+		E014A0FE2465E4F0009BC36B /* PackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PackViewController.swift; sourceTree = "<group>"; };
+		E0431B2A2465EB140056E5AD /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		E04BC7262465EF7B00F51193 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04BC7282465EF7B00F51193 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		E04BC72A2465EF7B00F51193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E04BC7322465F0E200F51193 /* Sticker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sticker.entitlements; sourceTree = "<group>"; };
+		E070A3DD2465D32600FE44C1 /* Sticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sticker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E070A3E02465D32600FE44C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E070A3E72465D32600FE44C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E070A3E92465D32600FE44C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E070A3EC2465D32600FE44C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E070A3EE2465D32600FE44C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E070A3F42465D56600FE44C1 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		E070A3F72465D58900FE44C1 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		E070A3F82465D58900FE44C1 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		E070A3F92465D58900FE44C1 /* white_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white_logo.png; sourceTree = "<group>"; };
+		E070A3FA2465D58900FE44C1 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		E070A3FB2465D58900FE44C1 /* ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ex.png; sourceTree = "<group>"; };
+		E070A3FC2465D58900FE44C1 /* viwe_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viwe_more.png; sourceTree = "<group>"; };
+		E070A3FD2465D58900FE44C1 /* rate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rate.png; sourceTree = "<group>"; };
+		E070A3FE2465D58900FE44C1 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		E070A3FF2465D58900FE44C1 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		E070A4002465D58900FE44C1 /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		E070A4012465D58900FE44C1 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		E070A4332465D7F700FE44C1 /* Sticker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sticker-Bridging-Header.h"; sourceTree = "<group>"; };
+		E070A4432465D8A700FE44C1 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		E070A4452465D8C600FE44C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E070A4472465D8CC00FE44C1 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		E070A4492465D8D900FE44C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E070A44B2465D8DF00FE44C1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		E070A44D2465D8EB00FE44C1 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E070A44F2465D8EF00FE44C1 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E070A4512465D8FD00FE44C1 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E070A4552465DBBE00FE44C1 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		E070A4562465DBBE00FE44C1 /* MyStickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStickerCell.swift; sourceTree = "<group>"; };
+		E070A4572465DBBE00FE44C1 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		E070A4582465DBBE00FE44C1 /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		E070A4592465DBBE00FE44C1 /* SubCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCell.swift; sourceTree = "<group>"; };
+		E070A45F2465DBFF00FE44C1 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E0D17C632465DDA3000BBF6F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0F889792465E69F00E84BC8 /* CreateStickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateStickerViewController.swift; sourceTree = "<group>"; };
+		E0F8897B2465E88100E84BC8 /* CreateSticker2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSticker2ViewController.swift; sourceTree = "<group>"; };
+		E0F8897D2465E91900E84BC8 /* CustomPackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPackViewController.swift; sourceTree = "<group>"; };
+		E0F8897F2465E9A300E84BC8 /* MyStickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyStickerViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E04BC7232465EF7B00F51193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				621CDE08ED4BDFA7EF5E41F7 /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E070A3DA2465D32600FE44C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E070A4522465D8FD00FE44C1 /* MobileCoreServices.framework in Frameworks */,
+				E070A4502465D8F000FE44C1 /* Accelerate.framework in Frameworks */,
+				E070A44E2465D8EB00FE44C1 /* ImageIO.framework in Frameworks */,
+				E070A44C2465D8DF00FE44C1 /* AssetsLibrary.framework in Frameworks */,
+				E070A44A2465D8D900FE44C1 /* QuartzCore.framework in Frameworks */,
+				E070A4482465D8CC00FE44C1 /* CoreFoundation.framework in Frameworks */,
+				E070A4462465D8C600FE44C1 /* UIKit.framework in Frameworks */,
+				E070A4442465D8A700FE44C1 /* WebP.framework in Frameworks */,
+				2CE6CF2F5656A194268F2E58 /* Pods_Sticker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305620333A2E3268B0AE035A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E070A4512465D8FD00FE44C1 /* MobileCoreServices.framework */,
+				E070A44F2465D8EF00FE44C1 /* Accelerate.framework */,
+				E070A44D2465D8EB00FE44C1 /* ImageIO.framework */,
+				E070A44B2465D8DF00FE44C1 /* AssetsLibrary.framework */,
+				E070A4492465D8D900FE44C1 /* QuartzCore.framework */,
+				E070A4472465D8CC00FE44C1 /* CoreFoundation.framework */,
+				E070A4452465D8C600FE44C1 /* UIKit.framework */,
+				E070A4432465D8A700FE44C1 /* WebP.framework */,
+				02E6FAA50241609F3E3B3475 /* Pods_Sticker.framework */,
+				A860C352B211C25470AC099B /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E04BC7272465EF7B00F51193 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E04BC7282465EF7B00F51193 /* NotificationService.swift */,
+				E04BC72A2465EF7B00F51193 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		E070A3D42465D32600FE44C1 = {
+			isa = PBXGroup;
+			children = (
+				E070A3DF2465D32600FE44C1 /* Sticker */,
+				E04BC7272465EF7B00F51193 /* OneSignalNotificationServiceExtension */,
+				E070A3DE2465D32600FE44C1 /* Products */,
+				F99A41E5CE23EE97B4C886DF /* Pods */,
+				305620333A2E3268B0AE035A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E070A3DE2465D32600FE44C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E070A3DD2465D32600FE44C1 /* Sticker.app */,
+				E04BC7262465EF7B00F51193 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E070A3DF2465D32600FE44C1 /* Sticker */ = {
+			isa = PBXGroup;
+			children = (
+				E04BC7322465F0E200F51193 /* Sticker.entitlements */,
+				E070A3E02465D32600FE44C1 /* AppDelegate.swift */,
+				E070A3F42465D56600FE44C1 /* Config.swift */,
+				884FF1C127865313005E7A17 /* AdmobManager.swift */,
+				E070A4322465D7CE00FE44C1 /* WebP */,
+				E070A3F62465D58900FE44C1 /* Image */,
+				E070A4532465DB9100FE44C1 /* ViewController */,
+				E070A3E62465D32600FE44C1 /* Main.storyboard */,
+				E070A3E92465D32600FE44C1 /* Assets.xcassets */,
+				E070A3EB2465D32600FE44C1 /* LaunchScreen.storyboard */,
+				E070A3EE2465D32600FE44C1 /* Info.plist */,
+			);
+			path = Sticker;
+			sourceTree = "<group>";
+		};
+		E070A3F62465D58900FE44C1 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E070A3F72465D58900FE44C1 /* add.png */,
+				E070A3F82465D58900FE44C1 /* tick.png */,
+				E070A3F92465D58900FE44C1 /* white_logo.png */,
+				E070A3FA2465D58900FE44C1 /* down.png */,
+				E070A3FB2465D58900FE44C1 /* ex.png */,
+				E070A3FC2465D58900FE44C1 /* viwe_more.png */,
+				E070A3FD2465D58900FE44C1 /* rate.png */,
+				E070A3FE2465D58900FE44C1 /* share.png */,
+				E070A3FF2465D58900FE44C1 /* delete.png */,
+				E070A4002465D58900FE44C1 /* edit.png */,
+				E070A4012465D58900FE44C1 /* back.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		E070A4322465D7CE00FE44C1 /* WebP */ = {
+			isa = PBXGroup;
+			children = (
+				88F44C092783DE9E001C5A1D /* ImageData.swift */,
+				88F44C152783DE9F001C5A1D /* ImageToWebPDataTransformer.h */,
+				88F44C0C2783DE9F001C5A1D /* ImageToWebPDataTransformer.m */,
+				88F44C162783DE9F001C5A1D /* Interoperability.swift */,
+				88F44C0A2783DE9E001C5A1D /* Limits.swift */,
+				88F44C0E2783DE9F001C5A1D /* Sticker.swift */,
+				88F44C122783DE9F001C5A1D /* StickerPack.swift */,
+				88F44C142783DE9F001C5A1D /* StickerPackManager.swift */,
+				88F44C0D2783DE9F001C5A1D /* UIAlertController+Additions.swift */,
+				88F44C102783DE9F001C5A1D /* UIImage+WebP.h */,
+				88F44C112783DE9F001C5A1D /* UIImage+WebP.m */,
+				88F44C182783DE9F001C5A1D /* WebPManager.swift */,
+				88F44C072783DE9E001C5A1D /* YYAnimatedImageView.h */,
+				88F44C0F2783DE9F001C5A1D /* YYAnimatedImageView.m */,
+				88F44C0B2783DE9E001C5A1D /* YYFrameImage.h */,
+				88F44C082783DE9E001C5A1D /* YYFrameImage.m */,
+				88F44C052783DE9E001C5A1D /* YYImage.h */,
+				88F44C192783DE9F001C5A1D /* YYImage.m */,
+				88F44C1A2783DE9F001C5A1D /* YYImageCoder.h */,
+				88F44C062783DE9E001C5A1D /* YYImageCoder.m */,
+				88F44C132783DE9F001C5A1D /* YYSpriteSheetImage.h */,
+				88F44C172783DE9F001C5A1D /* YYSpriteSheetImage.m */,
+				E070A4332465D7F700FE44C1 /* Sticker-Bridging-Header.h */,
+			);
+			path = WebP;
+			sourceTree = "<group>";
+		};
+		E070A4532465DB9100FE44C1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E070A4542465DBBD00FE44C1 /* cell */,
+				E070A45F2465DBFF00FE44C1 /* MainViewController.swift */,
+				E0D17C632465DDA3000BBF6F /* ViewController.swift */,
+				E014A0FC2465E3BB009BC36B /* AllSubViewController.swift */,
+				E014A0FE2465E4F0009BC36B /* PackViewController.swift */,
+				E0F889792465E69F00E84BC8 /* CreateStickerViewController.swift */,
+				E0F8897B2465E88100E84BC8 /* CreateSticker2ViewController.swift */,
+				E0F8897D2465E91900E84BC8 /* CustomPackViewController.swift */,
+				E0F8897F2465E9A300E84BC8 /* MyStickerViewController.swift */,
+				E0431B2A2465EB140056E5AD /* EditViewController.swift */,
+				88F44C032783DB94001C5A1D /* PackCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E070A4542465DBBD00FE44C1 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				E070A4552465DBBE00FE44C1 /* CategoryCell.swift */,
+				E070A4562465DBBE00FE44C1 /* MyStickerCell.swift */,
+				E070A4572465DBBE00FE44C1 /* HomeCell.swift */,
+				E070A4582465DBBE00FE44C1 /* StickerCell.swift */,
+				E070A4592465DBBE00FE44C1 /* SubCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		F99A41E5CE23EE97B4C886DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1A77FEF4A7A6802AA0023F4 /* Pods-Sticker.debug.xcconfig */,
+				8C2CB91E9771F177B04B74ED /* Pods-Sticker.release.xcconfig */,
+				36F4FD3187EF85DA44D681D8 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				48422B6E2FC815BF48512A36 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E04BC7252465EF7B00F51193 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E04BC7312465EF7B00F51193 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				7B289494D50D79D3C7B730D8 /* [CP] Check Pods Manifest.lock */,
+				E04BC7222465EF7B00F51193 /* Sources */,
+				E04BC7232465EF7B00F51193 /* Frameworks */,
+				E04BC7242465EF7B00F51193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = E04BC7262465EF7B00F51193 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E070A3DC2465D32600FE44C1 /* Sticker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E070A3F12465D32600FE44C1 /* Build configuration list for PBXNativeTarget "Sticker" */;
+			buildPhases = (
+				324E4327E3B86504C4439E97 /* [CP] Check Pods Manifest.lock */,
+				E070A3D92465D32600FE44C1 /* Sources */,
+				E070A3DA2465D32600FE44C1 /* Frameworks */,
+				E070A3DB2465D32600FE44C1 /* Resources */,
+				44657177F2B49E9A2902B9D4 /* [CP] Embed Pods Frameworks */,
+				E04BC72E2465EF7B00F51193 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E04BC72C2465EF7B00F51193 /* PBXTargetDependency */,
+			);
+			name = Sticker;
+			productName = Sticker;
+			productReference = E070A3DD2465D32600FE44C1 /* Sticker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E070A3D52465D32600FE44C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = MehulKathiriya;
+				TargetAttributes = {
+					E04BC7252465EF7B00F51193 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					E070A3DC2465D32600FE44C1 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = E070A3D82465D32600FE44C1 /* Build configuration list for PBXProject "Sticker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E070A3D42465D32600FE44C1;
+			productRefGroup = E070A3DE2465D32600FE44C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E070A3DC2465D32600FE44C1 /* Sticker */,
+				E04BC7252465EF7B00F51193 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E04BC7242465EF7B00F51193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E070A3DB2465D32600FE44C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E070A40A2465D58A00FE44C1 /* delete.png in Resources */,
+				E070A3ED2465D32600FE44C1 /* LaunchScreen.storyboard in Resources */,
+				E070A4082465D58A00FE44C1 /* rate.png in Resources */,
+				E070A40B2465D58A00FE44C1 /* edit.png in Resources */,
+				E070A40C2465D58A00FE44C1 /* back.png in Resources */,
+				E070A4032465D58A00FE44C1 /* tick.png in Resources */,
+				E070A4052465D58A00FE44C1 /* down.png in Resources */,
+				E070A4092465D58A00FE44C1 /* share.png in Resources */,
+				E070A4042465D58A00FE44C1 /* white_logo.png in Resources */,
+				E070A3EA2465D32600FE44C1 /* Assets.xcassets in Resources */,
+				E070A3E82465D32600FE44C1 /* Main.storyboard in Resources */,
+				E070A4062465D58A00FE44C1 /* ex.png in Resources */,
+				E070A4072465D58A00FE44C1 /* viwe_more.png in Resources */,
+				E070A4022465D58A00FE44C1 /* add.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		324E4327E3B86504C4439E97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sticker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44657177F2B49E9A2902B9D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sticker/Pods-Sticker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sticker/Pods-Sticker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sticker/Pods-Sticker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B289494D50D79D3C7B730D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E04BC7222465EF7B00F51193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04BC7292465EF7B00F51193 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E070A3D92465D32600FE44C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F44C1F2783DE9F001C5A1D /* ImageToWebPDataTransformer.m in Sources */,
+				88F44C232783DE9F001C5A1D /* UIImage+WebP.m in Sources */,
+				E070A45A2465DBBE00FE44C1 /* CategoryCell.swift in Sources */,
+				E070A4602465DBFF00FE44C1 /* MainViewController.swift in Sources */,
+				E0F889802465E9A300E84BC8 /* MyStickerViewController.swift in Sources */,
+				88F44C222783DE9F001C5A1D /* YYAnimatedImageView.m in Sources */,
+				88F44C1D2783DE9F001C5A1D /* ImageData.swift in Sources */,
+				E0F8897C2465E88100E84BC8 /* CreateSticker2ViewController.swift in Sources */,
+				E070A45C2465DBBE00FE44C1 /* HomeCell.swift in Sources */,
+				E0D17C642465DDA3000BBF6F /* ViewController.swift in Sources */,
+				E070A45B2465DBBE00FE44C1 /* MyStickerCell.swift in Sources */,
+				E014A0FD2465E3BC009BC36B /* AllSubViewController.swift in Sources */,
+				884FF1C227865313005E7A17 /* AdmobManager.swift in Sources */,
+				E070A45E2465DBBE00FE44C1 /* SubCell.swift in Sources */,
+				88F44C1E2783DE9F001C5A1D /* Limits.swift in Sources */,
+				E0F8897E2465E91900E84BC8 /* CustomPackViewController.swift in Sources */,
+				88F44C212783DE9F001C5A1D /* Sticker.swift in Sources */,
+				88F44C262783DE9F001C5A1D /* Interoperability.swift in Sources */,
+				E070A45D2465DBBE00FE44C1 /* StickerCell.swift in Sources */,
+				E014A0FF2465E4F0009BC36B /* PackViewController.swift in Sources */,
+				88F44C252783DE9F001C5A1D /* StickerPackManager.swift in Sources */,
+				E0431B2B2465EB140056E5AD /* EditViewController.swift in Sources */,
+				88F44C042783DB94001C5A1D /* PackCell.swift in Sources */,
+				88F44C282783DE9F001C5A1D /* WebPManager.swift in Sources */,
+				88F44C1C2783DE9F001C5A1D /* YYFrameImage.m in Sources */,
+				88F44C242783DE9F001C5A1D /* StickerPack.swift in Sources */,
+				88F44C292783DE9F001C5A1D /* YYImage.m in Sources */,
+				88F44C272783DE9F001C5A1D /* YYSpriteSheetImage.m in Sources */,
+				E0F8897A2465E69F00E84BC8 /* CreateStickerViewController.swift in Sources */,
+				88F44C1B2783DE9F001C5A1D /* YYImageCoder.m in Sources */,
+				E070A3E12465D32600FE44C1 /* AppDelegate.swift in Sources */,
+				E070A3F52465D56600FE44C1 /* Config.swift in Sources */,
+				88F44C202783DE9F001C5A1D /* UIAlertController+Additions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E04BC72C2465EF7B00F51193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E04BC7252465EF7B00F51193 /* OneSignalNotificationServiceExtension */;
+			targetProxy = E04BC72B2465EF7B00F51193 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E070A3E62465D32600FE44C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E070A3E72465D32600FE44C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E070A3EB2465D32600FE44C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E070A3EC2465D32600FE44C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E04BC72F2465EF7B00F51193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36F4FD3187EF85DA44D681D8 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = P2DAGTKAK2;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Sticker.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E04BC7302465EF7B00F51193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48422B6E2FC815BF48512A36 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = P2DAGTKAK2;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Sticker.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E070A3EF2465D32600FE44C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E070A3F02465D32600FE44C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E070A3F22465D32600FE44C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1A77FEF4A7A6802AA0023F4 /* Pods-Sticker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sticker/Sticker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = P2DAGTKAK2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sticker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Sticker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sticker/WebP/Sticker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E070A3F32465D32600FE44C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C2CB91E9771F177B04B74ED /* Pods-Sticker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Sticker/Sticker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEVELOPMENT_TEAM = P2DAGTKAK2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Sticker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Sticker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sticker/WebP/Sticker-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E04BC7312465EF7B00F51193 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E04BC72F2465EF7B00F51193 /* Debug */,
+				E04BC7302465EF7B00F51193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E070A3D82465D32600FE44C1 /* Build configuration list for PBXProject "Sticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E070A3EF2465D32600FE44C1 /* Debug */,
+				E070A3F02465D32600FE44C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E070A3F12465D32600FE44C1 /* Build configuration list for PBXNativeTarget "Sticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E070A3F22465D32600FE44C1 /* Debug */,
+				E070A3F32465D32600FE44C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E070A3D52465D32600FE44C1 /* Project object */;
+}

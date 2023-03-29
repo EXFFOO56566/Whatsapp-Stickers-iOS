@@ -1,0 +1,116 @@
+
+hr{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.container-fluid{
+	position: relative;
+}
+.logout-btn:hover{
+	background: #9972db !important;
+    border-radius: 10px;
+	color:#fff !important;
+}
+
+.form-title{
+	text-align: center;
+}
+
+.btn-center{
+	text-align: center;
+}
+
+.loader-div{
+	display:none; 
+	background: #fff;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 111;
+}
+.loader-div .login-loader-image{
+	position: absolute;
+	width: 6%;
+	margin-left: 47%;
+	margin-top: 20%;
+}
+.loader-image{
+	position: absolute; 
+	width: 15%;
+	margin-left: 43%;
+	margin-top: 15%;
+}
+ 
+.category-image{ 
+	width: 50px;
+}
+
+.pe-7s-edit{
+	font-weight: bold !important;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+
+.pe-7s-less,
+.pe-7s-date{
+	font-weight: bold !important;
+	font-size: 1.5em;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.sticker-div-top{
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+.sticker-div{
+	text-align: center;
+	border: 2px solid cadetblue;
+    border-radius: 15px;
+    padding: 10px;
+}
+.sticker-image{
+	width: 80px;
+}
+.sticker-p{
+	padding-top: 15px;
+}
+
+.sticker-i-delete{
+	padding-left: 0px !important; 
+}
+.sticker-h4{
+	text-align: center;
+}
+
+.list-loader-div{
+	display:none;
+	background: #fff;
+	z-index: 111; 
+	position: absolute; 
+	height: 100%;
+	width: 100%;
+}
+
+.list-loader-image{
+	position: absolute; 
+	width: 6%;
+	margin-left: 47%;
+	margin-top: 15%;
+}
+.modal-body .content{
+    padding: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    
+	.loader-div{
+		width: 89%;
+	}
+
+	.loader-image{
+		width: 50%; 
+		margin-left: 25%;
+		margin-top: 30%;
+	}
+}
